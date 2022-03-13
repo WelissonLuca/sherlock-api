@@ -1,6 +1,8 @@
 module.exports = {
   type: 'postgres',
-  url: process.env.DB_URL,
+  url: process.env.DATABASE_URL,
+  ssl: true,
+  extra: { ssl: { rejectUnauthorized: false } },
   migrations: [
     process.env.NODE_ENV === 'develop'
       ? './src/shared/infra/typeorm/migrations/**.ts'
