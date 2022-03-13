@@ -3,7 +3,7 @@ import { sign } from 'jsonwebtoken';
 import { inject, injectable } from 'tsyringe';
 
 import { IUserRepository } from '@modules/accounts/repositories/user-repository.interface';
-import { AppError } from '@shared/errors/AppError';
+import { AppError } from '@shared/errors/app-error';
 
 interface IRequest {
   email: string;

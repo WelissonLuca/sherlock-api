@@ -3,7 +3,7 @@ import { inject, injectable } from 'tsyringe';
 
 import { User } from '@modules/accounts/infra/typeorm/entities/user.entity';
 import { IUserRepository } from '@modules/accounts/repositories/user-repository.interface';
-import { AppError } from '@shared/errors/AppError';
+import { AppError } from '@shared/errors/app-error';
 
 interface IUserRequest {
   name: string;

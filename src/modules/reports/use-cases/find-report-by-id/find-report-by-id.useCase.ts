@@ -2,7 +2,7 @@ import { inject, injectable } from 'tsyringe';
 
 import { Report } from '@modules/reports/infra/typeorm/entities/reports.entity';
 import { IReportRepository } from '@modules/reports/repositories/report.repository.interface';
-import { AppError } from '@shared/errors/AppError';
+import { AppError } from '@shared/errors/app-error';
 
 @injectable()
 class FindReportByIdUseCase {
