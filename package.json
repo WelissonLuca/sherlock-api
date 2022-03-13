@@ -1,8 +1,7 @@
 {
-  "name": "Lita-back-end-rest-api",
+  "name": "sherlock-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Developers-XP37-Team-Projects/Lita-back-end-rest-api.git",
   "author": "Welisson <welissonluca17@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -11,10 +10,7 @@
     "test": "set NODE_ENV=test&&jest --detectOpenHandles --runInBand --testTimeout=10000"
   },
   "dependencies": {
-    "@sentry/integrations": "^6.13.2",
-    "@sentry/node": "^6.13.2",
     "bcryptjs": "^2.4.3",
-    "class-validator": "^0.13.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -55,7 +51,7 @@
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-import-helpers": "1.1.0",
     "eslint-plugin-prettier": "3.4.0",
-    "git-commit-msg-linter": "^3.2.6",
+    "git-commit-msg-linter": "^4.1.1",
     "prettier": "2.3.1",
     "ts-node-dev": "1.1.6",
     "tsconfig-paths": "3.9.0",
