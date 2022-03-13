@@ -1,8 +1,8 @@
 import { hash } from 'bcryptjs';
 import { inject, injectable } from 'tsyringe';
 
-import { User } from '@modules/accounts/infra/typeorm/entities/Users';
-import { IUserRepository } from '@modules/accounts/repositories/IUserRepository';
+import { User } from '@modules/accounts/infra/typeorm/entities/user';
+import { IUserRepository } from '@modules/accounts/repositories/user-repository.interface';
 import { AppError } from '@shared/errors/AppError';
 
 interface IUserRequest {

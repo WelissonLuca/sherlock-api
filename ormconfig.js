@@ -8,7 +8,7 @@ module.exports = {
   ],
   entities: [
     process.env.NODE_ENV === 'develop'
-      ? './src/modules/*/infra/typeorm/entities/**.ts'
+      ? './src/modules/*/infra/typeorm/entities/**.entity.ts'
       : './dist/modules/*/infra/typeorm/entities/**.js',
   ],
   cli: {

@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { ICreateUserDTO } from '@modules/accounts/dtos/ICreateUserDTO';
+import { ICreateUserDTO } from '@modules/accounts/dtos/create-user.dto';
 
-import { CreateUserUseCase } from './CreateUserUseCase';
+import { CreateUserUseCase } from './create-user.useCase';
 
 class CreateUserController {
   async handle(request: Request, response: Response) {
