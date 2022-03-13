@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { FindReportByIdUseCase } from './FindReportByIdUseCase';
+import { FindReportByIdUseCase } from './find-report-by-id.useCase';
 
 class FindReportByIdController {
   async handle(request: Request, response: Response): Promise<Response> {

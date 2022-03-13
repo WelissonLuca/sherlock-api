@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import { CreateReportController } from '@modules/reports/useCases/createReport/CreateReportController';
-import { FindReportByIdController } from '@modules/reports/useCases/findReportById/FindReportByIdController';
-import { FindReportsController } from '@modules/reports/useCases/findReports/FindReporsController';
+import { CreateReportController } from '@modules/reports/use-cases/create-report/create-report.controller';
+import { FindReportByIdController } from '@modules/reports/use-cases/find-report-by-id/find-report-by-id.controller';
+import { FindReportsController } from '@modules/reports/use-cases/find-reports/find-reports.controller';
 
 const ReportRouter = Router();
 

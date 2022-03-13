@@ -1,7 +1,7 @@
 import { inject, injectable } from 'tsyringe';
 
-import { Report } from '@modules/reports/infra/typeorm/entities/Reports';
-import { IReportRepository } from '@modules/reports/repositories/IReportRepository';
+import { Report } from '@modules/reports/infra/typeorm/entities/reports.entity';
+import { IReportRepository } from '@modules/reports/repositories/report.repository.interface';
 
 interface IReportRequest {
   localization: {

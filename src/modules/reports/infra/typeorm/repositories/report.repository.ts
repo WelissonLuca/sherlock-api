@@ -1,9 +1,9 @@
 import { getRepository, Repository } from 'typeorm';
 
-import { ICreateReportDTO } from '@modules/reports/dtos/ICreateReportDTO';
-import { IReportRepository } from '@modules/reports/repositories/IReportRepository';
+import { ICreateReportDTO } from '@modules/reports/dtos/create-report.dto';
+import { IReportRepository } from '@modules/reports/repositories/report.repository.interface';
 
-import { Report } from '../entities/Reports';
+import { Report } from '../entities/reports.entity';
 
 class ReportRepository implements IReportRepository {
   private repository: Repository<Report>;

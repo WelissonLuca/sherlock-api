@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { ICreateReportDTO } from '@modules/reports/dtos/ICreateReportDTO';
+import { ICreateReportDTO } from '@modules/reports/dtos/create-report.dto';
 
-import { CreateReportUseCase } from './CreateReportUseCase';
+import { CreateReportUseCase } from './create-report.useCase';
 
 class CreateReportController {
   async handle(request: Request, response: Response): Promise<Response> {

@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-import { ILocalizationDTO } from '@modules/reports/dtos/ICreateReportDTO';
+import { ILocalizationDTO } from '@modules/reports/dtos/create-report.dto';
 
 @Entity('reports')
 class Report {

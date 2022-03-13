@@ -1,6 +1,6 @@
-import { Report } from '@modules/reports/infra/typeorm/entities/Reports';
+import { Report } from '@modules/reports/infra/typeorm/entities/reports.entity';
 
-import { ICreateReportDTO } from '../dtos/ICreateReportDTO';
+import { ICreateReportDTO } from '../dtos/create-report.dto';
 
 interface IReportRepository {
   create(data: ICreateReportDTO): Promise<Report>;
