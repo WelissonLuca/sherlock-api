@@ -6,7 +6,7 @@ import { ICreateUserDTO } from '@modules/accounts/dtos/create-user.dto';
 import { CreateUserUseCase } from './create-user.useCase';
 
 class CreateUserController {
-  async handle(request: Request, response: Response) {
+  async handle(request: Request, response: Response): Promise<Response> {
     const { name, email, password }: ICreateUserDTO = request.body;
 
     const createUserUseCase = container.resolve(CreateUserUseCase);

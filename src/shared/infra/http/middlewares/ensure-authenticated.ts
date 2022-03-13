@@ -9,7 +9,7 @@ export function ensureAuthenticated(
   request: Request,
   response: Response,
   next: NextFunction
-) {
+): void {
   const authToken = request.headers.authorization;
 
   if (!authToken) {
